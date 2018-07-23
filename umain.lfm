@@ -1,0 +1,137 @@
+object Form1: TForm1
+  Left = 0
+  Height = 286
+  Top = 0
+  Width = 320
+  BorderStyle = bsDialog
+  Caption = 'Graphical environment launcher'
+  ClientHeight = 286
+  ClientWidth = 320
+  Position = poScreenCenter
+  ShowInTaskBar = stNever
+  Visible = False
+  object Label1: TLabel
+    Left = 8
+    Height = 17
+    Top = 8
+    Width = 89
+    Caption = 'Servidor gráfico'
+    ParentColor = False
+  end
+  object ComboBox1: TComboBox
+    Left = 8
+    Height = 27
+    Top = 24
+    Width = 296
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      'Xephyr'
+      'Xnest'
+    )
+    Style = csDropDownList
+    TabOrder = 0
+    Text = 'Xephyr'
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 17
+    Top = 64
+    Width = 60
+    Caption = 'Resolução:'
+    ParentColor = False
+  end
+  object ComboBox2: TComboBox
+    Left = 8
+    Height = 27
+    Top = 80
+    Width = 296
+    ItemHeight = 0
+    ItemIndex = 2
+    Items.Strings = (
+      '640x480'
+      '800x600'
+      '1024x768'
+      '1280x800'
+      '1280x1024'
+      '1366x768'
+      '1440x900'
+      '1536x864'
+      '1600x900'
+      '1680x1050'
+      '1920x1080'
+    )
+    Style = csDropDownList
+    TabOrder = 1
+    Text = '1024x768'
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 17
+    Top = 120
+    Width = 130
+    Caption = 'Gerenciador de janelas'
+    ParentColor = False
+  end
+  object ComboBox3: TComboBox
+    Left = 8
+    Height = 27
+    Top = 136
+    Width = 296
+    ItemHeight = 0
+    ItemIndex = 2
+    Items.Strings = (
+      'wmaker'
+      'openbox'
+      'metacity'
+    )
+    Style = csDropDownList
+    TabOrder = 2
+    Text = 'metacity'
+  end
+  object ButtonPanel1: TButtonPanel
+    Left = 6
+    Height = 42
+    Top = 238
+    Width = 308
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    OKButton.OnClick = OKButtonClick
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    CancelButton.OnClick = CancelButtonClick
+    TabOrder = 3
+    ShowButtons = [pbOK, pbCancel]
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 17
+    Top = 176
+    Width = 41
+    Caption = 'Display'
+    ParentColor = False
+  end
+  object ComboBox4: TComboBox
+    Left = 8
+    Height = 27
+    Top = 192
+    Width = 296
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      ':10'
+      ':11'
+      ':12'
+      ':13'
+      ':14'
+      ':15'
+    )
+    Style = csDropDownList
+    TabOrder = 4
+    Text = ':10'
+  end
+end
