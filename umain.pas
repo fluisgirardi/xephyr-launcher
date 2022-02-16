@@ -63,6 +63,7 @@ begin
     0: wmanager:=Format('wmaker -display %s',    [ComboBox4.Items[ComboBox4.ItemIndex]]);
     1: wmanager:=Format('DISPLAY=%s openbox',    [ComboBox4.Items[ComboBox4.ItemIndex]]);
     2: wmanager:=Format('metacity --display=%s', [ComboBox4.Items[ComboBox4.ItemIndex]]);
+    3: wmanager:=Format('mutter --display=%s',   [ComboBox4.Items[ComboBox4.ItemIndex]]);
 
   end;
 
